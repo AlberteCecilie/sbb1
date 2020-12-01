@@ -1,0 +1,307 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+
+/* GENERALT */
+
+body {
+    margin: 0;
+    font-family: sans serif;
+    background: white;
+    color: #fff;
+        }
+
+
+/* LINKS - fjerner farve og understregning*/
+
+a:link {
+text-decoration: none;
+color: black;
+}
+
+a:visited {
+text-decoration: none;
+color: black;
+}
+
+
+/* FORSIDE OVERSKRIFT */
+
+#forside {
+color: black;
+text-align: center;
+margin-right: 40%;
+font-size:4vw;
+letter-spacing: 3px;
+margin-top: -5px;
+}
+
+#forsideh1 {
+color: black;
+text-align: center;
+margin-left: 40%;
+font-size:4vw;
+letter-spacing: 3px;
+margin-top: -60px;
+}
+
+/* NAVBAR */
+
+.menubar {
+    background: transparent;
+    font-family: inherit;
+}
+
+.menubar ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menubar ul li {
+  display: inline-block;
+    width: 220px;
+  list-style: none;
+    vertical-align: middle;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 15px 0 0;
+  font-family: "Open Sans"
+}
+
+.logo img {
+  margin: 10px auto 0px auto;
+  display: block;
+  width:60px;
+}
+/* HEADER - SLUT */
+   
+
+/* VIDEO */
+#hero video {
+width: 100%; 
+position: relative;
+}
+
+
+/* KONTAKT KNAP MED POPUP */
+
+
+#contact {
+color: black;
+font-size: 25px;
+background-color: white;
+padding: 20px;
+text-align: center;
+position: fixed;
+border:1px solid #999999;
+top:70%;
+right:-2%;
+transform: rotate(-270deg);
+}
+
+.messagepop {
+background-color:#FFFFFF;
+border:1px solid #999999;
+cursor:default;
+display:none;
+margin-top: 15px;
+position:absolute;
+text-align:center;
+width:300px;
+height: 115px;
+z-index:50;
+padding: 25px 25px 20px;
+color: black;
+position: fixed;
+top:65%;
+right:3%;
+font-size: 20px;
+}
+
+
+/* TEASER SEKTION */
+
+h2 {
+color: black;
+}
+
+.teaser {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+
+.underside1 img {
+max-width: 100%;
+height: auto;
+float: left;
+margin-right: 30px;
+margin-top:20px;
+}
+
+.h2u1 {
+display: inline;
+float: left;
+}
+
+#a1 {
+color: black;
+display: inline;
+float: left;
+text-decoration: underline;
+
+}
+
+.underside2 img {
+max-width: 100%;
+height: auto;
+float: right;
+margin-left: 30px;
+margin-top:20px;
+}
+
+.h2u2 {
+display: inline;
+float: right;
+}
+
+#a2 {
+color: black;
+display: inline;
+float: right;
+text-decoration: underline;
+
+}
+
+.underside3 img {
+max-width: 100%;
+height: auto;
+float: left;
+margin-right: 30px;
+margin-top:20px;
+}
+
+.h2u3 {
+display: inline;
+float: left;
+}
+
+#a3 {
+color: black;
+display: inline;
+float: left;
+text-decoration: underline;
+
+}
+
+.underside4 img {
+max-width: 100%;
+height: auto;
+float: right;
+margin-left: 30px;
+margin-top:20px;
+}
+
+.h2u4 {
+display: inline;
+float: right;
+}
+
+#a4 {
+color: black;
+display: inline;
+float: right;
+text-decoration: underline;
+}
+
+/* GALLERI */ 
+
+
+/* overskrift */
+
+.overskriftgalleri {
+color: black;
+font-size: 3vw;
+text-align: center;
+}
+
+/* Billeder */
+
+.galleri img {
+width: 100%;
+height: auto;
+object-fit: cover;
+display: block;
+}
+
+
+.galleri {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+grid-gap: 15px;
+}
+
+
+
+
+/* SHOP */
+
+.overskriftshop {
+color: black;
+font-size: 3vw;
+text-align: center;
+}
+
+
+/* Billeder */
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.shop img {
+min-width: 400px;
+padding: 40px;
+
+}
+
+/* RESPONSIV SMARTPHONE - START */
+
+@media only screen and (min-width:375px) and (max-width:767px){
+
+/* BURGERMENU */ 
+    
+    
+    
+/* VIDEO MOBIL */
+#hero video {
+width: 150%;
+
+}
+    
+/* GALLERI */
+
+    
+.galleri img {
+width: 100%;
+height: auto;
+}
+
+}
+  
+/* MOBIL SLUT */
+
